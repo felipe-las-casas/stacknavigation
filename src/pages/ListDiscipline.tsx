@@ -9,10 +9,11 @@ export default function ListDiscipline() {
   function handleGoBack() {
     navigation.goBack();
   }
+
   return (
     <View style={styles.container}>
-      <Text>Lista Disciplina</Text>
-      <Text>lista</Text>
+      <Text style={styles.title}>Lista Disciplina</Text>
+      <Text>Nome da Disciplina</Text>
       <Button
         title="Voltar"
         onPress={handleGoBack}
@@ -29,4 +30,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  title: {
+    fontWeight: 'bold'
+  }
 });

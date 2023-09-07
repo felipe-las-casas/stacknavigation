@@ -20,11 +20,12 @@ export default function Login() {
 
   return (
     <View style={styles.container}>
-      <Text>Login</Text>
+      <Text style={styles.title}>Login</Text>
       <TextInput
         placeholder="e-mail"
         onChangeText={email => setEmail(email)}
         value={email}
+        style={styles.input}
       />
       <Button
         title='Entrar'
@@ -46,4 +47,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  input: {
+    marginVertical: 10,
+    padding: 12,
+    backgroundColor: '#222',
+    color: '#fff'
+  },
+  title: {
+    marginVertical: 10,
+    fontWeight: 'bold'
+  },
+  
 });

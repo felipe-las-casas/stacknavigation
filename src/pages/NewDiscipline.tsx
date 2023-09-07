@@ -12,7 +12,7 @@ export default function NewDiscipline() {
   }
   return (
     <View style={styles.container}>
-      <Text>Nova Disciplina</Text>
+      <Text style={styles.title}>Nova Disciplina</Text>
       <Text>Crie uma disciplina para adicionar alunos</Text>
       <TextInput
         placeholder="Disciplina"
@@ -33,4 +33,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  title: {
+    fontWeight: 'bold'
+  }
 });

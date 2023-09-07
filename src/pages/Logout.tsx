@@ -16,8 +16,9 @@ export default function Logout() {
   }
   return (
     <View style={styles.container}>
-      <Text>Logout</Text>
+      <Text style={styles.title}>Logout</Text>
       <TextInput
+        style={styles.input}
         placeholder="e-mail"
       />
       <Button
@@ -39,5 +40,15 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  input: {
+    marginVertical: 10,
+    padding: 12,
+    backgroundColor: '#222',
+    color: '#fff'
+  },
+  title: {
+    marginVertical: 10,
+    fontWeight: 'bold'
   },
 });
