@@ -1,5 +1,4 @@
 import { useNavigation } from '@react-navigation/native';
-import { StatusBar } from 'expo-status-bar';
 import { TextInput, Button, StyleSheet, Text, View } from 'react-native';
 import { AuthNavigatornRoutesProps } from '../routes/auth.routes';
 
@@ -21,7 +20,6 @@ export default function NewDiscipline() {
         title='Criar'
         onPress={handleNewDiscipline}
       />
-      <StatusBar style="auto" />
     </View>
   );
 }

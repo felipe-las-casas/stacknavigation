@@ -1,5 +1,4 @@
 import { useNavigation } from '@react-navigation/native';
-import { StatusBar } from 'expo-status-bar';
 import { TextInput, Button, StyleSheet, Text, View } from 'react-native';
 import { AuthNavigatornRoutesProps } from '../routes/auth.routes';
 import { useState } from 'react';
@@ -35,7 +34,6 @@ export default function Login() {
         title='Criar Login'
         onPress={handleNewLogin}
       />
-      <StatusBar style="auto" />
     </View>
   );
 }

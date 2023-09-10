@@ -1,5 +1,4 @@
 import { useNavigation } from '@react-navigation/native';
-import { StatusBar } from 'expo-status-bar';
 import { Button, StyleSheet, Text, View } from 'react-native';
 import { AuthNavigatornRoutesProps } from '../routes/auth.routes';
 
@@ -18,7 +17,6 @@ export default function ListDiscipline() {
         title="Voltar"
         onPress={handleGoBack}
         />
-      <StatusBar style="auto" />
     </View>
   );
 }
